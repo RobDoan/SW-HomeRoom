@@ -8,4 +8,5 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import '../vendors/material/style.themed.scss';
+
 console.log('Hello World from Webpacker')

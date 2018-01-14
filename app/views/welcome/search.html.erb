@@ -1,0 +1,77 @@
+<div class="ms-site-container ms-nav-fixed">
+  <nav class="navbar navbar-expand-md ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
+    <%= render 'shared/top_nav' %>
+  </nav>
+  <div class="wrap ms-hero-img-brain-color ms-hero-bg-info ms-bg-fixed full-screen-height">
+    <div class="container ms-paper-content index-1">
+      <section class="ms-component-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="zmdi zmdi-graduation-cap"></i> Search Results</h3>
+              </div>
+
+              <div class="card-tabs">
+                <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-3" role="tablist">
+                  <li class="nav-item">
+                    <a href="#home3" aria-controls="home3" role="tab" data-toggle="tab" class="active withoutripple nav-link ">
+                      <i class="zmdi zmdi-home"></i>
+                      <span class="d-none d-sm-inline">Posts</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#profile3" aria-controls="profile" role="tab" data-toggle="tab" class="withoutripple nav-link ">
+                      <i class="zmdi zmdi-graduation-cap"></i>
+                      <span class="d-none d-sm-inline">Mental Health Classroom</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#psychologits" aria-controls="psychologits" role="tab" data-toggle="tab" class="withoutripple nav-link ">
+                      <i class="zmdi zmdi-male"></i>
+                      <span class="d-none d-sm-inline">Psychologists</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-block">
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade active show" id="home3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit magnam, consectetur unde,
+                      deserunt
+                      voluptatum earum beatae architecto pariatur excepturi commodi, natus nostrum ullam fugit eum est?
+                      Adipisci
+                      ad, neque veniam.</p>
+                    <p>Quod aperiam asperiores, pariatur excepturi perferendis sunt beatae doloribus explicabo, veniam
+                      numquam,
+                      autem nihil culpa sapiente blanditiis, est repellendus totam velit nisi aliquid a optio? Iste
+                      placeat
+                      necessitatibus qui eius.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="profile3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse expedita ratione eum, praesentium
+                      labore
+                      nemo molestiae non, quasi similique enim natus. Maiores dolor architecto facilis cum cupiditate
+                      aliquam
+                      culpa natus!</p>
+                    <p>Eos sapiente natus inventore quaerat, obcaecati explicabo delectus ipsa iste sit deserunt,
+                      blanditiis
+                      temporibus. Unde mollitia officiis eum. Ut autem voluptatibus maiores amet at magnam fuga
+                      doloremque!
+                      Explicabo, qui, eaque.</p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="psychologits">
+                    <%= render 'shared/users/user' %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+

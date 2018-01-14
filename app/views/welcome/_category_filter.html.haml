@@ -1,0 +1,29 @@
+/ Nav tabs
+%ul.nav-tabs-full.shadow-2dp.nav.nav-tabs{:role => "tablist"}
+  %li.active{:role => "presentation"}
+    %a.withoutripple{"aria-controls" => "home", "data-toggle" => "tab", :href => "#users", :role => "tab"}
+      %i.zmdi.zmdi-accounts
+      %span.hidden-xs Peoples
+      %span.badge.badge-round.badge-danger 5
+  %li{:role => "presentation"}
+    %a.withoutripple{"aria-controls" => "profile", "data-toggle" => "tab", :href => "#posts", :role => "tab"}
+      %i.zmdi.zmdi-collection-text
+      %span.hidden-xs Posts
+      %span.badge.badge-round.badge-warning 3
+  %li{:role => "presentation"}
+    %a.withoutripple{"aria-controls" => "settings", "data-toggle" => "tab", :href => "#groups", :role => "tab"}
+      %i.fa.fa-group
+      %span.hidden-xs Groups
+      %span.badge.badge-round.badge-success 2
+  %li{:role => "presentation"}
+    %a.withoutripple{"aria-controls" => "settings", "data-toggle" => "tab", :href => "#questions", :role => "tab"}
+      %i.fa.fa-question
+      %span.hidden-xs Questions
+  %li{:role => "presentation"}
+    %a.withoutripple{"aria-controls" => "messages", "data-toggle" => "tab", :href => "#videos", :role => "tab"}
+      %i.zmdi.zmdi-collection-video
+      %span.hidden-xs Videos
+  %li{:role => "presentation"}
+    %a.withoutripple{"aria-controls" => "settings", "data-toggle" => "tab", :href => "#files", :role => "tab"}
+      %i.fa.fa-file-pdf-o
+      %span.hidden-xs Files

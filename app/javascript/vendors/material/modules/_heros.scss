@@ -512,6 +512,12 @@
     background-position: center center;
 }
 
+.ms-hero-img-brain-color {
+    background-image: url('../img/emotional-intelligence-819.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
 .ms-hero-img-coffee {
     background-image: url('../img/coffee.jpg');
     background-size: cover;
@@ -798,5 +804,5 @@
 
 
 .full-screen-height{
-    height: 100vh;
+    min-height: 100vh;
 }

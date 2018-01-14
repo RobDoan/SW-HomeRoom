@@ -1,0 +1,44 @@
+<% 2.times do %>
+  <div class="row">
+    <% 3.times do %>
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-primary wow zoomInUp mb-2">
+          <div class="withripple zoom-img">
+            <a href="javascript:void()" class="">
+              <%= image_tag("demo/doctors/p#{cycle(0, 1)}.jpg", class: 'img-fluid') %>
+            </a>
+          </div>
+          <div class="card-block">
+            <span class="label label-royal pull-right">Psychologit</span>
+            <h3 class="color-royal">Dr. Giuseppe Alfonsi</h3>
+            <p>
+              Years in Practice: <b>8 Years</b>
+              <br />
+              School: <b>Université de Sherbrooke</b><br />
+              License No. and State: <b>12912-16 Quebec</b>
+            </p>
+            <div class="row">
+              <div class="col">
+                <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-twitter">
+                  <i class="zmdi zmdi-twitter"></i>
+                </a>
+                <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-linkedin">
+                  <i class="zmdi zmdi-linkedin"></i>
+                </a>
+              </div>
+              <div class="col text-right">
+                <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-pinterest">
+                  <i class="zmdi zmdi-calendar"></i>
+                </a>
+
+                <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-xs mt-1 mr-1 no-mr-md btn-vine">
+                  <i class="zmdi zmdi-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

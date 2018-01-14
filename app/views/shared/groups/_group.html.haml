@@ -1,0 +1,30 @@
+.card.mb-4
+  .card-header
+    %h2
+      %i.zmdi.zmdi-graduation-cap
+      Maths
+  .card-block
+    .group-members
+      %a{:href => "#"}= image_tag('demo/avatar50.jpg', class: 'thumbnail--48px thumbnail--circle thumbnail-card')
+      %a{:href => "#"}= image_tag('demo/avatar50.jpg', class: 'thumbnail--24px thumbnail--circle thumbnail-card')
+      %a{:href => "#"}= image_tag('demo/avatar50.jpg', class: 'thumbnail--24px thumbnail--circle thumbnail-card')
+      %a{:href => "#"}= image_tag('demo/avatar50.jpg', class: 'thumbnail--24px thumbnail--circle thumbnail-card')
+      %a{:href => "#"}
+        %i.zmdi.zmdi-more
+      %button.pull-right.btn.btn-primary.btn-xs.btn-raised{:href => "#"}
+        %i.zmdi.zmdi-collection-plus
+        Join
+    %hr/
+    .text-center
+      .row
+        .col-xs-6
+          %a.label-primary.label 1,200 members
+        .col-xs-6
+          %a.label-info.label 500 active posts
+      .row
+        .col-xs-12
+          = FFaker::Lorem.phrase
+    %hr/
+    .tags
+      - 4.times do
+        %span.label.label-inverse= FFaker::Tweet.tags(1)

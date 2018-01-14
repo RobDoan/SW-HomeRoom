@@ -1,0 +1,24 @@
+.card
+  .topic-entry.clearfix
+    .topic-entry__vote_container
+      .topic-entry__vote
+        %a{href: '#'}
+          %i.zmdi.zmdi-chevron-up.ms-icon-2x
+        .vote-number
+          = rand(100)
+        %a{href:'#'}
+          %i.zmdi.zmdi-chevron-down.ms-icon-2x
+    .topic-entry__block
+      %h4.mt0.pt0
+        %a{href: '#'}
+          [Lorem Ipsum] Phasellus ullamcorper rhoncus sagittis.
+      %small.text-muted
+        In ac turpis vitae ante pretium cursus. Suspendisse nisl arcu, venenatis elementum lacinia sed.
+        %br/
+        %span.label.label-inverse 3 hours ago
+        by
+        %strong.color-primary @RobDoan
+      %span.pull-right
+        %i.zmdi.zmdi-comment-alt-text
+        20 answers
+

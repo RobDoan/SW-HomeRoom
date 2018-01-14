@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require jquery3
 //= require material/plugins.min
 //= require material/DropdownHover
@@ -20,8 +19,12 @@
 //= require material/tabs
 //= require material/app
 //= require material/pages/lead
+//= require ./plugins/moment.min
+//= require ./plugins/questionaire
+//= require ./plugins/fullcalendar.min
+//= require calendar
+//= require_self
 
-
-$.ready(function(){
-  $('.question').questionair()
+jQuery(document).ready(function () {
+  jQuery(".question").questionair()
 })

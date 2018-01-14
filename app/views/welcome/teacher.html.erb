@@ -2,12 +2,12 @@
   <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
     <%= render 'shared/top_nav' %>
   </nav>
-  <div class="wrap ms-hero-img-meeting ms-hero-bg-info color-white ms-bg-fixed full-screen-height">
+  <div class="wrap ms-hero-img-brain-color ms-hero-bg-info color-white ms-bg-fixed full-screen-height">
     <div class="intro-full-content index-1">
-      <div class="container">
+      <div class="container question-list">
         <div class="text-center mb-2">
           <div class="question" data-question='1'>
-            <h3 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2
+            <h3 class="no-m color-white center-block mt-2
               animated zoomInDown animation-delay-5">
               What's your emotional problem?
             </h3>
@@ -15,18 +15,19 @@
               <input type="text" class='form-control' placeholder="Anxiety">
           </div>
           <div class="question" data-question='2' style="display: none;">
-            <h3 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2
-              animated zoomInDown animation-delay-5">
-              What's your emotional problem?
+            <h3 class="no-m ms-site-title color-white center-block mt-1
+              animated fadeInDown animation-delay-2">
+              What's your age?
             </h3>
             <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">
               <input type="text" class='form-control' placeholder="Anxiety">
           </div>
         </div>
 
-        <div class="text-center mb-2">
-          <a id="go-intro-full-next" href="javascript:void(0)" class="btn btn-xlg btn-raised btn-white color-primary animated zoomInUp animation-delay-12">
-            <i class="fa fa-rocket"></i> Let's go!</a>
+        <div class="text-center mb-2 d-none finish-cover">
+          <a id="go-intro-full-next"
+             href="javascript:void(0)" class="btn btn-xlg btn-raised btn-white color-primary animated zoomInUp animation-delay-3">
+            <i class="fa fa-rocket"></i> Submit!</a>
         </div>
       </div>
     </div>
