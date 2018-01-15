@@ -21,3 +21,4 @@ $.fn.questionair = (option) ->
     if !questionair
       element.data('homeroom.questionair', new Questionair(element))
   )
+

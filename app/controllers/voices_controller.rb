@@ -1,21 +1,22 @@
 require 'twilio-ruby'
-require 'pry'
 
 class VoicesController < ApplicationController
   # Before we allow the incoming request to connect, verify
   # that it is a Twilio request
   before_action :load_credentials, only: [:call, :connect]
   before_action :authenticate_twilio_request, only: [:connect]
+  skip_before_action :verify_authenticity_token, only: [:connect]
 
   # Render home page
   def index
+    @contact =Contact.new
     render 'index'
   end
 
   def call
     contact = Contact.new
-    contact.user_phone = params[:userPhone]
-    contact.sales_phone = params[:salesPhone]
+    contact.sales_phone = '514-248-8681'
+    contact.user_phone =  contact_params[:user_phone]
 
     # Validate contact
     if contact.valid?
@@ -32,15 +33,18 @@ class VoicesController < ApplicationController
     end
 
     respond_to do |format|
+      format.html { redirect_to '/calling' }
       format.json { render json: @msg }
     end
   end
 
   def connect
     response = Twilio::TwiML::VoiceResponse.new do |r|
-      r.say('Thanks for contacting our sales department. Our '\
-        'next available representative will take your call.', voice: 'alice')
-      r.dial number: params[:sales_number]
+      r.say('Thanks for using our home room services.
+             We are connecting to home room psychologist', voice: 'alice')
+      r.dial do |dial|
+        dial.number('514-248-8681')
+      end
     end
 
 
@@ -73,9 +77,13 @@ class VoicesController < ApplicationController
   end
 
   def load_credentials
-    @twilio_sid = ENV['TWILIO_ACCOUNT_SID']
-    @twilio_token = ENV['TWILIO_AUTH_TOKEN']
-    @twilio_number = ENV['TWILIO_NUMBER']
-    @api_host = ENV['API_HOST']
+    @twilio_sid = 'askjdklsajdlksajdkls'
+    @twilio_token = 'dasdksalkdjlasklasjdl'
+    @twilio_number = '+29381293'
+    @api_host = 'http://65ab6379.ngrok.io'
+  end
+
+  def contact_params
+    params.require(:contact).permit(:user_phone)
   end
 end

@@ -31,3 +31,13 @@
 
 en:
   hello: "Hello world"
+  group:
+    descriptions:
+      anxiety: 'Anxiety'
+      addiction: "Anxiety refers to strong feelings of unease, worry and fear. Because
+          occasional anxiety is a normal human experience, it's sometimes hard to
+          know when it's becoming a mental health problem – but if your feelings of
+          anxiety are very strong, or last for a long time, they can be overwhelming"
+      depression: 'Depression is a feeling of low mood that lasts for a long time and affects
+                   your everyday life. It can make you feel hopeless, despairing, guilty,
+                   worthless, unmotivated and exhausted'

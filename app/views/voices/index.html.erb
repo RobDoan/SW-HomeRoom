@@ -1,0 +1,39 @@
+<div class="ms-site-container">
+  <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
+    <%= render 'shared/top_nav' %>
+  </nav>
+  <div class="wrap ms-hero-img-brain-color ms-hero-bg-info color-white ms-bg-fixed full-screen-height">
+    <div class="intro-full-content index-1">
+      <div class="container">
+        <div class="card animated card-primary fadeInUp animation-delay-2">
+          <div class="card-header">
+            <h3 class="card-title">Your contact info</h3>
+          </div>
+          <div class="card-block">
+            <%= form_for :contact, url: '/call', method: :post do |f| %>
+              <fieldset class="container">
+                <div class="form-group row is-empty">
+                  <%= f.label :user_phone, 'Phone Number', class: 'col-lg-2 control-label' %>
+                  <div class="col-lg-9">
+                    <%= f.text_field :user_phone, class: 'form-control', placeholder: '514-248-8681' %>
+                  </div>
+                </div>
+                <div class="form-group row is-empty">
+                  <label for="textArea" class="col-lg-2 control-label">Message</label>
+                  <div class="col-lg-9">
+                    <textarea class="form-control" rows="3" id="textArea" placeholder="Your message..."></textarea>
+                  </div>
+                </div>
+                <div class="form-group row justify-content-end">
+                  <div class="col-lg-10">
+                    <button type="submit" class="btn btn-raised btn-primary">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

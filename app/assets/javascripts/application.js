@@ -27,4 +27,10 @@
 
 jQuery(document).ready(function () {
   jQuery(".question").questionair()
+
+  $('#submit-by-javascript').on('click', function () {
+      $('#submit-by-javascript').parents('form').submit()
+    }
+  )
+
 })

@@ -1,0 +1,33 @@
+<div class="ms-site-container ms-nav-fixed">
+  <nav class="navbar navbar-expand-md navbar-fixed ms-lead-navbar navbar-mode navbar-mode mb-0" id="navbar-lead">
+    <%= render 'shared/top_nav' %>
+  </nav>
+  <div class="wrap ms-hero-img-brain-color ms-hero-bg-info color-white ms-bg-fixed full-screen-height">
+    <div class="intro-full-content index-1">
+      <div class="container question-list">
+        <div class="text-center mb-2">
+          <%= form_for @user, class: 'form-horizontal'  do |f| %>
+            <% i = 0 %>
+            <% list_questions.each do |method, question| %>
+              <% i += 1 %>
+              <div class="question" data-question='<%= i %>' style="<%= 'display: none;' if i >= 2 %>">
+                <h2 class="no-m color-white center-block mb-1 animated slideInDown">
+                  <%= question %>
+                </h2>
+                <p class="lead lead-lg color-white text-center center-block mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-2">
+                  <%= f.text_field method, class: 'form-control' %>
+                </p>
+              </div>
+            <% end %>
+            <%= f.hidden_field :role %>
+            <div class="text-center mb-2 d-none finish-cover">
+              <buton class="btn btn-xlg btn-raised" id='submit-by-javascript'>
+                <i class="zmdi zmdi-face"></i> Submit!
+              </buton>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

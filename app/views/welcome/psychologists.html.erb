@@ -16,7 +16,7 @@
               <div class="card-tabs">
                 <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-3" role="tablist">
                   <li class="nav-item">
-                    <a href="#home3" aria-controls="home3" role="tab" data-toggle="tab" class="active withoutripple nav-link ">
+                    <a href="#home3" aria-controls="home3" role="tab" data-toggle="tab" class="withoutripple nav-link ">
                       <i class="zmdi zmdi-accounts"></i>
                       <span class="d-none d-sm-inline">Groups</span>
                     </a>
@@ -28,7 +28,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#psychologits" aria-controls="psychologits" role="tab" data-toggle="tab" class="withoutripple nav-link ">
+                    <a href="#psychologits" aria-controls="psychologits" role="tab" data-toggle="tab" class="active withoutripple nav-link ">
                       <i class="zmdi zmdi-male"></i>
                       <span class="d-none d-sm-inline">Psychologists</span>
                     </a>
@@ -38,7 +38,7 @@
 
               <div class="card-block">
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade active show" id="home3">
+                  <div role="tabpanel" class="tab-pane fade" id="home3">
                     <%= render 'shared/groups/group' %>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="profile3">
@@ -53,7 +53,7 @@
                       doloremque!
                       Explicabo, qui, eaque.</p>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="psychologits">
+                  <div role="tabpanel" class="tab-pane active fade show" id="psychologits">
                     <%= render 'shared/users/user' %>
                   </div>
                 </div>

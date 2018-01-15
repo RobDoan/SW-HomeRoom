@@ -39,14 +39,13 @@
           <i class="zmdi zmdi-search"></i>
         </label>
       </form>
-      <a class="btn btn-white btn-lg btn-raised" href="/teacher">
-        <i class="zmdi zmdi-graduation-cap"></i>
-        I AM A TEACHER
-      </a>
-      <a class="btn btn-warning btn-lg btn-raised" href="#">
-        <i class="zmdi zmdi-male-female"></i>
-        I AM A PARENT
-      </a>
+      <%= link_to teacher_users_path, class: 'btn btn-raised btn-lg btn-white
+              color-primary animated flipInX animation-delay-20' do %>
+        <i class="zmdi zmdi-graduation-cap"></i> I AM A TEACHER
+      <% end %>
+      <%= link_to parent_register_users_path, class: 'btn btn-raised btn-lg btn-warning animated flipInX animation-delay-24' do %>
+        <i class="zmdi zmdi-male-female"></i> I AM A PARENT
+      <% end %>
     </div>
   </div>
 </header>

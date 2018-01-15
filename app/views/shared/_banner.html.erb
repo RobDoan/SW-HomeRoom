@@ -1,4 +1,4 @@
-<header class="ms-hero-page ms-hero-img-keyboard ms-hero-bg-dark color-white">
+<header class="ms-hero-page ms-hero-img-keyboard ms-hero-bg-dark color-white ms-navbar-white">
   <div class="container index-1">
     <div class="row">
       <div class="col-lg-6">
@@ -15,11 +15,13 @@
           <li class="animated fadeInUp animation-delay-16">Anytime, anywhere.</li>
         </ul>
         <div class="text-center">
-          <a href="/teacher" class="btn btn-raised btn-lg btn-white
-              color-primary animated flipInX animation-delay-20">
-            <i class="zmdi zmdi-graduation-cap"></i> I am teacher</a>
-          <a href="javascript:void(0)" class="btn btn-raised btn-lg btn-warning animated flipInX animation-delay-24">
-            <i class="zmdi zmdi-male-female"></i> I am parent</a>
+          <%= link_to teacher_users_path, class: 'btn btn-raised btn-lg btn-white
+              color-primary animated flipInX animation-delay-20' do %>
+            <i class="zmdi zmdi-graduation-cap"></i> I am teacher
+          <% end %>
+          <%= link_to parent_register_users_path, class: 'btn btn-raised btn-lg btn-warning animated flipInX animation-delay-24' do %>
+            <i class="zmdi zmdi-male-female"></i> I am parent
+          <% end %>
         </div>
       </div>
       <div class="col-lg-6 text-center mt-4">
